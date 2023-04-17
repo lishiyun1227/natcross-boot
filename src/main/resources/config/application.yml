@@ -1,3 +1,7 @@
+# ip2region
+ip2region:
+  enabled: true
+  dbfile: /home/tbds/tbds/data/ip2region.db
 server:
   port: ${SERVER_PORT:10020}
   ssl:
@@ -8,7 +12,7 @@ server:
     key-store-password: ${SERVER_SSL_KEY_STORE_PASSWORD:}
 logging:
   config: ${LOG_CONFIG_PATH:}
-  logdir: ${LOG_DIR:/logs/person}
+  logdir: ${LOG_DIR:logs/person}
   console-level: debug
   file-level: trace
   pattern:
